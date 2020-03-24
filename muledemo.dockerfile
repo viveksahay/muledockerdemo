@@ -10,7 +10,7 @@ RUN cd /opt && unzip ~/mule-enterprise-standalone-4.1.5.zip && rm ~/mule-enterpr
 RUN chmod -R 777 /opt/mule-enterprise-standalone-4.1.5
 RUN cp ~/sample-api-books.jar /opt/mule/apps
 
-# Define environment variables.
+# Define environment variables..
 ENV MULE_HOME /opt/mule
 
 # Define mount points.
