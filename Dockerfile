@@ -6,9 +6,9 @@ RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/mule-enterprise-s
 RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/muleappdockerdemo.jar
 
 RUN apt-get install unzip
-RUN cd /opt && unzip ~/mule-enterprise-standalone-4.1.5.zip && rm ~/mule-enterprise-standalone-4.1.5.zip && ln -s /opt/mule-enterprise-standalone-4.1.5 /opt/mule
-RUN chmod -R 777 /opt/mule-enterprise-standalone-4.1.5
-RUN cp ~/sample-api-books.jar /opt/mule/apps
+RUN cd /opt && unzip ~/mule-enterprise-standalone-4.2.2.managed.zip && rm ~/mule-enterprise-standalone-4.2.2.managed.zip && ln -s /opt/mule-enterprise-standalone-4.2.2 /opt/mule
+RUN chmod -R 777 /opt/mule-enterprise-standalone-4.2.2
+RUN cp ~/muleappdockerdemo.jar /opt/mule/apps
 
 # Define environment variables..
 ENV MULE_HOME /opt/mule
