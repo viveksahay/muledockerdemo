@@ -1,6 +1,6 @@
 FROM java:openjdk-8-jdk
 
-MAINTAINER baran.mano@gmail.com
+MAINTAINER sahayvivek28@gmail.com
 
 RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/mule-enterprise-standalone-4.2.2.managed.zip
 RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/muleappdockerdemo.jar
