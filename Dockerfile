@@ -21,4 +21,4 @@ WORKDIR /opt/mule
 
 CMD ["/opt/mule/bin/mule"]
 # Default http port
-EXPOSE 8029
+EXPOSE 9191
