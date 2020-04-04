@@ -15,6 +15,8 @@ ENV MULE_HOME /opt/mule
 
 # Define mount points.
 VOLUME ["/opt/mule/logs"]
+VOLUME ["/opt/mule"]
+VOLUME ["/opt"]
 
 # Define working directory.
 WORKDIR /opt/mule
