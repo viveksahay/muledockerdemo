@@ -6,8 +6,8 @@ RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/mule-enterprise-s
 RUN cd ~ && wget https://storage.googleapis.com/muledockerdemo/muleappdockerdemo.jar
 
 RUN apt-get install unzip
-RUN cd /opt && unzip ~/mule-enterprise-standalone-4.2.2.managed.zip && rm ~/mule-enterprise-standalone-4.2.2.managed.zip && ln -s /opt/mule-enterprise-standalone-4.2.2.managed /opt/mule
-RUN chmod -R 777 /opt/mule-enterprise-standalone-4.2.2.managed
+RUN cd /opt && unzip ~/mule-enterprise-standalone-4.2.2-hf1_managed.zip && rm ~/mule-enterprise-standalone-4.2.2-hf1_managed.zip && ln -s /opt/mule-enterprise-standalone-4.2.2-hf1_managed /opt/mule
+RUN chmod -R 777 /opt/mule-enterprise-standalone-4.2.2-hf1_managed
 RUN cp ~/muleappdockerdemo.jar /opt/mule/apps
 
 # Define environment variables..
